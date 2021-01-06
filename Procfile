@@ -1,1 +1,1 @@
-web: mvn install && mvn spring-boot:run -pl application
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar application/target/application-0.0.1-SNAPSHOT.jar
